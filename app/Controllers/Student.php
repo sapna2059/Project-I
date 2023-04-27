@@ -15,8 +15,6 @@ class Student extends BaseController
         $studentList =
         $query->getResultArray();
        return view('student/index',['students'=> $studentList]);
-
-
     }
      public function new(){
         //if($this->request->is('post'))
